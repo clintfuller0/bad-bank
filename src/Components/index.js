@@ -4,9 +4,10 @@ import ReactRouterDOM from 'react-router-dom';*/
 import Home from './home';
 import NavBar from './navbar';
 import Card from './card.js';
+import CreateAccount from './createaccount';
 
 export {
-  Home, NavBar, Card,
+  Home, NavBar, Card, CreateAccount,
 };
 
 

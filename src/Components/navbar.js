@@ -1,4 +1,5 @@
 /*import React from "react";*/
+import { route, link, HashRouter } from 'react-router-dom';
 
 function NavBar(){
   return(
