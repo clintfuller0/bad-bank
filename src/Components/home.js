@@ -1,7 +1,9 @@
 import React from "react";
+import Card from "./card.js"
+/*import { useContext, useState } from "react";*/
 
 function Home(){
-  const ctx = React.useContext(UserContext);
+  /*const ctx = React.useContext(UserContext);*/
 
   return (
     <div>

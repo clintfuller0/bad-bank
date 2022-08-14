@@ -1,26 +1,38 @@
-import AllData from "./Components/alldata";
-import Context from "./Components/context";
-import CreateAccount from "./Components/createaccount";
-import Deposit from "./Components/deposit";
-import Home from "./Components/home";
-import Index from "./Components/index";
-import NavBar from "./Components/navbar";
-import Withdraw from "./Components/withdraw";
+import { createContext } from 'react';
+import { HashRouter, Route } from 'react-router-dom';
+
 import './App.css';
+import { Home } from './Components';
+
+const UserContext = createContext(null);
 
 function App() {
   return (
-    <div className="App">
-        <AllData />
-        <Context />
-        <CreateAccount />
-        <Deposit />
-        <Home />
-        <Index />
-        <NavBar />
-        <Withdraw />
-    </div>
-  );
+    <HashRouter>
+    {/* <NavBar /> */}
+    <UserContext.Provider
+      value={{
+        users: [
+          {
+            name: 'abel',
+            email: 'abel@mit.edu',
+            password: 'secret',
+            balance: 0,
+          },
+        ],
+      }}
+    >
+      <div className='container' style={{ padding: '20px' }}>
+        <Route path='/' exact component={Home} />
+        {/* 
+        <Route path='/createaccount/' component={CreateAccount} />
+        <Route path='/deposit/' component={Deposit} />
+        <Route path='/withdraw/' component={Withdraw} />
+        <Route path='/alldata/' component={AllData} /> */}
+      </div>
+    </UserContext.Provider>
+  </HashRouter>
+);
 };
 
 export default App;

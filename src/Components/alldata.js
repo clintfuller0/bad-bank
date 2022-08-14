@@ -1,9 +1,8 @@
-import React from "react";
-
+/*import ( useContext ) from "react";
 function AllData(){
-  const ctx = React.useContext(UserContext);
+  /*const ctx = React.useContext(UserContext);*/
 
-  return (
+  /*return (
     <div>
     <h1>All Data in Store</h1>
     {JSON.stringify(ctx)}
@@ -32,4 +31,4 @@ function NewUser(){
 </UserContext.Consumer>
 }
 
-export default AllData;
+export default AllData;*/

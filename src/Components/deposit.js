@@ -1,7 +1,7 @@
-import React from "react";
+/*import { useContext } from "react";*/
 
 function Deposit(){
-  const ctx = React.useContext(UserContext);
+  /*const ctx = React.useContext(UserContext);*/
   return (
     <>
     <h1>Deposit<br/>

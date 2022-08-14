@@ -1,6 +1,5 @@
-import React from "react";
-
-import { useContext } from "react";
+/*import { useContext, useState } from "react";
+import { route, link, HashRouter } from 'react-router-dom';
 
 const Route       = ReactRouterDOM.Route;
 const Link        = ReactRouterDOM.Link;
@@ -27,4 +26,4 @@ function Card(props){
     );    
   }
 
-  export default Context;
+  export default Card;*/

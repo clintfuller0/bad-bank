@@ -1,4 +1,4 @@
-import React from "react";
+import Card from "./card.js";
 
 function CreateAccount(){
   const [show, setShow]         = React.useState(true);

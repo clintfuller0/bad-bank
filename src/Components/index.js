@@ -1,13 +1,17 @@
-import React from "react";
+/*import React from "react";
 import ReactDOM from 'react-dom';
-import ReactRouterDOM from 'react-router-dom';
-import { App } from './app';
+import ReactRouterDOM from 'react-router-dom';*/
+import Home from './home';
+
+export {
+  Home,
+};
 
 /*import Home from "./Components/home";
 import CreateAccount from "./Components/createaccount";
 import Deposit from "./Components/deposit";
 import Withdraw from "./Components/withdraw";
-import AllData from "./Components/alldata";*/
+import AllData from "./Components/alldata";
 
 const UserContext = React.createContext(null)
 
@@ -38,4 +42,4 @@ ReactDOM.render(
 );
 ReactDOM.render(<App />, document.getElementById('root'));
 
-export default Index;
+export default Index;*/
