@@ -5,9 +5,10 @@ import Home from './home';
 import NavBar from './navbar';
 import Card from './card.js';
 import CreateAccount from './createaccount';
+import img from './bank.png';
 
 export {
-  Home, NavBar, Card, CreateAccount,
+  Home, NavBar, Card, CreateAccount, img,
 };
 
 
