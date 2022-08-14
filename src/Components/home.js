@@ -1,7 +1,6 @@
-import { useContext, useState } from "react";
-import { route, link, HashRouter } from 'react-router-dom';
+/*import { useContext, useState } from "react";
+import { route, link, HashRouter } from 'react-router-dom';*/
 import Card from './card.js';
-import { NavBar } from './navbar.js';
 
 function Home(){
 

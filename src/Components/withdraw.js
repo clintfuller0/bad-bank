@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+/*import { useContext, useState } from "react";
 import { HashRouter, Route } from 'react-router-dom';
 import { Card } from './card.js';
 
@@ -23,4 +23,4 @@ function Withdraw(){
   )
 }
 
-export default Withdraw;
+export default Withdraw;*/

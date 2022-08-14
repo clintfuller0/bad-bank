@@ -1,9 +1,9 @@
-import { useContext, useState } from "react";
+/*import { useContext, useState } from "react";
 import { HashRouter, Route } from 'react-router-dom';
 import { Card } from './card.js';
 
 function Deposit(){
-  /*const ctx = React.useContext(UserContext);*/
+  /*const ctx = React.useContext(UserContext);
   return (
     <>
     <h1>Deposit<br/>
@@ -23,4 +23,4 @@ function Deposit(){
   )
 }
 
-export default Deposit;
+export default Deposit;*/
