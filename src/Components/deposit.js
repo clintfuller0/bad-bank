@@ -1,9 +1,21 @@
-/*import { useContext, useState } from "react";
-import { HashRouter, Route } from 'react-router-dom';
-import { Card } from './card.js';
+import { useContext, useState } from "react";
+import UserContext from "./context";
+/*import { UserConsumer } from "./card.js";*/
 
 function Deposit(){
-  /*const ctx = React.useContext(UserContext);
+  const [deposit, setDeposit] = useState(0);
+  const UserConsumer = UserContext.Consumer;
+
+  return (
+<UserConsumer>
+      {({ name, email, balance, updateBalance }) => {
+
+        const submitDeposit = () => {
+          updateBalance(deposit);
+        };
+
+        const updateDeposit = (event) => setDeposit(parseFloat(event.target.value));
+  
   return (
     <>
     <h1>Deposit<br/>
@@ -14,13 +26,16 @@ function Deposit(){
   </div>
   <div class="card-body">
   <div class="input-group mb-3">
-  <button type ="submit" id="basic-addon1">Deposit</button>
-  <input type="text" class="form-control" placeholder="Deposit Amount" aria-label="Deposit Amount" aria-describedby="basic-addon1"/>
+  <button type ="submit" onClick={submitDeposit} id="basic-addon1">Deposit</button>
+  <input type="text" class="form-control" placeholder="Deposit Amount" aria-label="Deposit Amount" aria-describedby="basic-addon1" onChange={updateDeposit} />
   </div>
 </div>
 </div>
-    </>
-  )
+</>
+  );
+}};
+</UserConsumer>
+  );
 }
 
-export default Deposit;*/
+export default Deposit;

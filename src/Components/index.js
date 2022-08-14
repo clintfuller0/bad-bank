@@ -1,24 +1,19 @@
-/*import React from "react";
-import ReactDOM from 'react-dom';
-import ReactRouterDOM from 'react-router-dom';*/
+import React from 'react';
+import ReactRouterDOM from 'react-router-dom';
 import Home from './home';
 import NavBar from './navbar';
 import Card from './card.js';
 import CreateAccount from './createaccount';
+import Deposit from './deposit';
+/*import Withdraw from '.withdraw';
+import AllData from './alldata';*/
 import img from './bank.png';
 
 export {
-  Home, NavBar, Card, CreateAccount, img,
+  React, /*ReactRouterDOM,*/ Home, NavBar, Card, CreateAccount, Deposit, /*Withdraw, AllData,*/ img,
 };
 
-
-/*import Home from "./Components/home";
-import CreateAccount from "./Components/createaccount";
-import Deposit from "./Components/deposit";
-import Withdraw from "./Components/withdraw";
-import AllData from "./Components/alldata";
-
-const UserContext = React.createContext(null)
+/*const UserContext = React.createContext(null)
 
 function Spa() {
     const Route       = ReactRouterDOM.Route;

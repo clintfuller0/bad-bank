@@ -1,6 +1,6 @@
-import { createContext } from 'react';
-import { HashRouter, Route } from 'react-router-dom';
-import { Home, NavBar, CreateAccount } from './Components';
+import React, { createContext } from 'react';
+import { HashRouter, Route, Link } from 'react-router-dom';
+import { Home, NavBar, CreateAccount, Deposit, Withdraw, AllData } from './Components';
 import './App.css';
 
 const UserContext = createContext(null);
@@ -25,9 +25,8 @@ function App() {
       <div className='container' style={{ padding: '20px' }}>
         <Route path='/' exact component={Home} />
           <Route path='/createaccount/' component={CreateAccount} />
-          {/*
             <Route path='/deposit/' component={Deposit} />
-            <Route path='/withdraw/' component={Withdraw} />
+            {/*<Route path='/withdraw/' component={Withdraw} />
             <Route path='/alldata/' component={AllData} />*/}
         </div>
         </HashRouter>
@@ -38,4 +37,7 @@ function App() {
 );
 };
 
+/*export default UserContext;*/
+export const UserProvider = UserContext.Provider;
+export const UserConsumer = UserContext.Consumer;
 export default App;
