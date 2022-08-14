@@ -1,4 +1,6 @@
-import Card from "./card.js";
+import { useContext, useState } from 'react';
+import { HashRouter, Route } from 'react-router-dom';v
+import { Card } from './card.js';
 
 function CreateAccount(){
   const [show, setShow]         = React.useState(true);

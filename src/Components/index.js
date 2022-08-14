@@ -2,10 +2,13 @@
 import ReactDOM from 'react-dom';
 import ReactRouterDOM from 'react-router-dom';*/
 import Home from './home';
+import NavBar from './navbar';
+import Card from './card.js';
 
 export {
-  Home,
+  Home, NavBar, Card,
 };
+
 
 /*import Home from "./Components/home";
 import CreateAccount from "./Components/createaccount";

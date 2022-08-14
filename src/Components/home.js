@@ -1,9 +1,9 @@
-import React from "react";
-import Card from "./card.js"
-/*import { useContext, useState } from "react";*/
+import { useContext, useState } from "react";
+import { route, link, HashRouter } from 'react-router-dom';
+import Card from './card.js';
+import { NavBar } from './navbar.js';
 
 function Home(){
-  /*const ctx = React.useContext(UserContext);*/
 
   return (
     <div>
@@ -14,7 +14,7 @@ function Home(){
       header="BadBank Landing Module"
       title="Welcome to the bank"
       text="You can move around using the navigation bar."
-      body={(<img src="bank.png" className="img-fluid" alt="Responsive image"/>)}
+      body={(<img src="bank.png" className="img-fluid" alt="Responsive"/>)}
     />   
     </div> 
   );  

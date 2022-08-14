@@ -1,10 +1,10 @@
-/*import { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import { route, link, HashRouter } from 'react-router-dom';
 
-const Route       = ReactRouterDOM.Route;
+/*const Route       = ReactRouterDOM.Route;
 const Link        = ReactRouterDOM.Link;
 const HashRouter  = ReactRouterDOM.HashRouter;
-const UserContext = React.createContext(null);
+const UserContext = React.createContext(null);*/
 
 function Card(props){
     function classes(){
@@ -26,4 +26,4 @@ function Card(props){
     );    
   }
 
-  export default Card;*/
+  export default Card;
